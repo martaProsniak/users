@@ -15,21 +15,27 @@ public class UsersMain {
         System.out.println("Hello world!");
 
         String fileName = "users.txt";
-        List userList = new ArrayList();
+        List userList;
 
         userList = load(fileName);
+        print(userList);
+    }
 
-        /*for (Object user : userList) {
+
+    /**
+     * Prints data about users.
+     * @param users User List.
+     */
+    private static void print(List<User> users) {
+        for (Object user : users) {
             System.out.println(((User) user).getName() + " " +
                     ((User) user).getLastName() + " " +
                     ((User) user).getLogin());
-        } */
-
+        }
     }
 
     /**
      * Loads data from txt file and put them to a list.
-     *
      * @param fileName file path
      * @return User list.
      */
@@ -62,5 +68,7 @@ public class UsersMain {
             return Collections.emptyList();
         }
     }
+
+
 }
 
