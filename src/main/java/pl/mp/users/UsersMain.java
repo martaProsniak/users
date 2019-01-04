@@ -5,10 +5,7 @@ import pl.mp.users.model.User;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class UsersMain {
 
@@ -19,8 +16,13 @@ public class UsersMain {
         List userList;
 
         userList = load(fileName);
-        print(userList);
+        //print(userList);
 
+        //Create new hash set
+        Set usersSet = new HashSet();
+
+        usersSet.addAll(userList);
+        print(usersSet);
     }
 
 
