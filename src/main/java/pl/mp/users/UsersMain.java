@@ -19,7 +19,7 @@ public class UsersMain {
         //print(userList);
 
         //Create new hash set
-        Set usersSet = new HashSet();
+        Set <User> usersSet = new HashSet();
 
         usersSet.addAll(userList);
         print(usersSet);
