@@ -41,4 +41,11 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        String userInfo = "String name: " + getName() + "; String last name: " + getLastName() +
+                "; String login: " + getLogin();
+        return userInfo;
+    }
 }
