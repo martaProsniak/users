@@ -44,8 +44,8 @@ public class User {
 
     @Override
     public String toString() {
-        String userInfo = "String name: " + getName() + "; String last name: " + getLastName() +
-                "; String login: " + getLogin();
+        String userInfo = "String name: " + name + "; String last name: " + lastName +
+                "; String login: " + login;
         return userInfo;
     }
 }
