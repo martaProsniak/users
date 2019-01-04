@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -25,9 +26,9 @@ public class UsersMain {
 
     /**
      * Prints data about users.
-     * @param users User List.
+     * @param users User collection.
      */
-    private static void print(List<User> users) {
+    private static void print (Collection <User> users){
         for (Object user : users) {
             System.out.println(((User) user).getName() + " " +
                     ((User) user).getLastName() + " " +
