@@ -22,7 +22,9 @@ public class UsersMain {
         Set <User> usersSet = new HashSet();
 
         usersSet.addAll(userList);
-        print(usersSet);
+
+        //toString method
+        System.out.println(usersSet);
     }
 
 
