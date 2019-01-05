@@ -34,9 +34,7 @@ public class UsersMain {
      */
     private static void print (Collection <User> users){
         for (Object user : users) {
-            System.out.println(((User) user).getName() + " " +
-                    ((User) user).getLastName() + " " +
-                    ((User) user).getLogin());
+            System.out.println(user);
         }
     }
 
@@ -45,7 +43,7 @@ public class UsersMain {
      * @param fileName file path
      * @return User list.
      */
-    static List<User> load(String fileName) {
+    public static List<User> load(String fileName) {
         try (FileReader fr = new FileReader(fileName);
              BufferedReader br = new BufferedReader(fr)) {
             String usersCount = br.readLine();
